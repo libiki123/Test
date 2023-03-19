@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1727485160018733542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727485160018733562}
+  - component: {fileID: 1727485160018733563}
+  - component: {fileID: 1528929415}
+  - component: {fileID: 2318822555910655316}
+  - component: {fileID: 1528929420}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727485160018733562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727485160018733542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727485160018733563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727485160018733542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6878251dccd5f4fb059987b0019a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSceneName: Game
+  menuSceneName: MainMenu
+  Energy: {fileID: 0}
+--- !u!114 &1528929415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727485160018733542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cdadaecf3e48c4aa8865a48e6da62b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: SaveData_
+  saveDataIndex: 0
+  useEncryption: 0
+--- !u!114 &2318822555910655316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727485160018733542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11ab246a67c23540874b32b18874475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMute: 0
+  sfxMute: 0
+--- !u!114 &1528929420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727485160018733542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe8ac0be091ca84ba265c3172dc4f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <punch>k__BackingField:
+    Guid:
+      Data1: 524138753
+      Data2: 1106667818
+      Data3: -75404870
+      Data4: 28542863
+    Path: event:/SFX/Player/Punch
+  <kick>k__BackingField:
+    Guid:
+      Data1: -82633491
+      Data2: 1204537289
+      Data3: -1801603709
+      Data4: 1387361845
+    Path: event:/SFX/Player/Kick
+  <hurt>k__BackingField:
+    Guid:
+      Data1: -2022400280
+      Data2: 1275832374
+      Data3: 1319959687
+      Data4: -1458449270
+    Path: event:/SFX/Player/Hurt
+  <frenzy>k__BackingField:
+    Guid:
+      Data1: 1769389119
+      Data2: 1211179036
+      Data3: 1109995178
+      Data4: -1459147784
+    Path: event:/SFX/Player/Frenzy
+  <shieldBreak>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <brickBreak>k__BackingField:
+    Guid:
+      Data1: 1874179451
+      Data2: 1324627284
+      Data3: 1544530869
+      Data4: 1323688772
+    Path: event:/SFX/Player/BrickBreak
+  <bonusBreak>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <gameplayBGM>k__BackingField:
+    Guid:
+      Data1: -1329181126
+      Data2: 1145112840
+      Data3: 1135521165
+      Data4: 241966523
+    Path: event:/Music/GameplayBGM
+  <mainMenuBGM>k__BackingField:
+    Guid:
+      Data1: 1087090299
+      Data2: 1319615522
+      Data3: 1915753375
+      Data4: -1251743086
+    Path: event:/Music/MainMenuBGM
+  <buttonClick>k__BackingField:
+    Guid:
+      Data1: 1107589452
+      Data2: 1296547406
+      Data3: 332666772
+      Data4: 1244577636
+    Path: event:/SFX/UI/ButtonClick
+  <wrongClick>k__BackingField:
+    Guid:
+      Data1: 1107589452
+      Data2: 1296547406
+      Data3: 332666772
+      Data4: 1244577636
+    Path: event:/SFX/UI/ButtonClick
+  <shopItemClick>k__BackingField:
+    Guid:
+      Data1: 636220376
+      Data2: 1314298485
+      Data3: 147160252
+      Data4: -776252370
+    Path: event:/SFX/UI/ShopItemClick
+  <timeOut>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <clockTick>k__BackingField:
+    Guid:
+      Data1: -406915884
+      Data2: 1125522560
+      Data3: 848600457
+      Data4: 923675137
+    Path: event:/SFX/UI/ClockTick
+  <introBGM>k__BackingField:
+    Guid:
+      Data1: 1989197812
+      Data2: 1333590443
+      Data3: 539753634
+      Data4: 1058737964
+    Path: event:/Music/IntroBGM

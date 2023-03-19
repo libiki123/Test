@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ad2e6b1558f1441a0a03c5f2ea4ffd, type: 3}
+  m_Name: Player_Stats
+  m_EditorClassIdentifier: 
+  startingWeapon: {fileID: 3924333937684274663, guid: e9a8f3bf36213634abac507c9ca4d173,
+    type: 3}
+  maxHealth: 500
+  recovery: 0
+  moveSpeed: 13
+  magnet: 5

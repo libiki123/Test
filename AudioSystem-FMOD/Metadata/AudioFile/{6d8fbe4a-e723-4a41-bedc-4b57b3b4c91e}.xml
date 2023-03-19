@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6d8fbe4a-e723-4a41-bedc-4b57b3b4c91e}">
+		<property name="assetPath">
+			<value>SFX/Lab 2 - power up - punch time.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.5199999999999996</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ba80d227-49b8-48b0-b8d3-7470ec72e8e6}</destination>
+		</relationship>
+	</object>
+</objects>

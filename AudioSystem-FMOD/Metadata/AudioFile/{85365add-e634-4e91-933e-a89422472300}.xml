@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{85365add-e634-4e91-933e-a89422472300}">
+		<property name="assetPath">
+			<value>UI/Lab2_sfx_UI_Chooseoutfit.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7763265306122449</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ba80d227-49b8-48b0-b8d3-7470ec72e8e6}</destination>
+		</relationship>
+	</object>
+</objects>
