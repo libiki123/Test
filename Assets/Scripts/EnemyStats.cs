@@ -11,6 +11,7 @@ public class EnemyStats : MonoBehaviour
     private float currentHealth;
     private float currentDamage;
     private DropManager dropManager;
+    private GameObject player;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class EnemyStats : MonoBehaviour
         currentMoveSpeed = enemyData.MoveSpeed;
         currentHealth = enemyData.MaxHealth;
         currentDamage = enemyData.Damage;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void TakeDamage(float dmg)
@@ -38,15 +40,22 @@ public class EnemyStats : MonoBehaviour
         EnemySpawner.instance.OnEnemyKilled();
     }
 
+    private void OnCollisionEnter(Collision col)
+    {
+        //if (col.gameObject.CompareTag("Player"))
+        //{
+        //    Rigidbody playerRb = col.gameObject.GetComponent<Rigidbody>();
+        //    Vector3 forceDirection = (player.transform.position - transform.position).normalized;
+        //    playerRb.AddRelativeForce(forceDirection * 4000, ForceMode.Impulse);
+        //}
+    }
+
     private void OnCollisionStay(Collision col)
     {
         if (col.gameObject.CompareTag("Player"))
         {
             PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
             player.TakeDamage(currentDamage);
-            //PlayerMovement playerMovement = col.gameObject.GetComponent<PlayerMovement>();
-            //Vector3 forceDirection = (player.transform.position - transform.position).normalized;
-            //playerMovement.Knockback()
         }
     }
 

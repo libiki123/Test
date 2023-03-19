@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drops:
   - type: 2
-    droprate: 30
+    droprate: 50
 --- !u!1 &2251640718110569152
 GameObject:
   m_ObjectHideFlags: 0

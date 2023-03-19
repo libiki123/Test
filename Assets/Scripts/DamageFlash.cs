@@ -11,7 +11,8 @@ public class DamageFlash : MonoBehaviour
     Material[] mats;
     Material[] mats2;
 
-    float flashTime = 0.15f;
+    [Header("Flash Stats")]
+    [SerializeField] float flashInterval = 0.15f;
 
     private void Start()
     {
@@ -34,10 +35,7 @@ public class DamageFlash : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            FlashStart();
-        }
+     
     }
 
     public void FlashStart()
@@ -48,7 +46,7 @@ public class DamageFlash : MonoBehaviour
         }
         meshRenderer.materials = mats;
 
-        if(mats2.Length > 0)
+        if(mats2 != null)
         {
             foreach (Material mat in mats2)
             {
@@ -56,8 +54,6 @@ public class DamageFlash : MonoBehaviour
             }
             meshRenderer2.materials = mats2;
         }
-
-        Invoke(nameof(FlashStop), flashTime);
     }
 
     private void FlashStop()
@@ -66,7 +62,30 @@ public class DamageFlash : MonoBehaviour
         {
             mats[i].color = orginColor[i];
         }
-
         meshRenderer.materials = mats;
+
+        if (mats2 != null)
+        {
+            for (int i = 0; i < mats2.Length; i++)
+            {
+                mats2[i].color = orginColor2[i];
+            }
+            meshRenderer2.materials = mats2;
+        }
+    }
+
+    private IEnumerator DFlash()
+    {
+        int count = 3;
+
+        while (count > 0)
+        {
+            Debug.Log(count);
+            FlashStart();
+            yield return new WaitForSeconds(5);
+            FlashStop();
+            count--;
+        }
+
     }
 }

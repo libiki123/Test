@@ -13,9 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Knock Back")]
     [SerializeField] private float knockbackDuration;
-    [SerializeField] private Vector2 knockbackSpeed;
     private bool knockBack;
-    private float knockbackStartTime;
+    private float knockbackTimer;
 
     private PlayerStats player;
     private Rigidbody rb;
@@ -39,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void InputManagement()
     {
+        if (knockBack) return;
+
         float moveX;
         float moveZ;
 
@@ -63,19 +64,22 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + moveDir * Time.deltaTime);
     }
 
-    public void Knockback(Vector3 forceDir, float forceAmount)
-    {
-        //knockBack = true;
-        //knockbackStartTime = Time.time;
-        //rb.velocity = new Vector2(knockbackSpeed.x * forceDir, knockbackSpeed.y);
-    }
+    //public void Knockback(Vector3 forceDir, float forceAmount)
+    //{
+    //    knockBack = true;
+    //    knockbackTimer = knockbackDuration;
+
+    //}
 
     private void CheckKnockBack()
     {
-        if (Time.time > knockbackStartTime + knockbackDuration && knockBack)
-        {
-            knockBack = false;
-            rb.velocity = new Vector2(0.0f, rb.velocity.y);     // stop the knockback
-        }
+        //if (knockBack)
+        //{
+        //    knockbackTimer -= Time.deltaTime;
+        //    if (knockbackTimer <= 0)
+        //    {
+
+        //    }
+        //}
     }
 }
